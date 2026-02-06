@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quran Time — Support</title>
+  <meta name="description" content="Quran Time — support, privacy policy, and app information." />
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --card: #121215;
+      --text: #e9e9ea;
+      --muted: #b7b7bb;
+      --accent: #f2c97d;
+      --border: rgba(255,255,255,0.08);
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(242,201,125,0.14), transparent 60%),
+                  linear-gradient(#0b0b0c, #070708);
+      color: var(--text);
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 18px; }
+    .card {
+      background: rgba(18,18,21,0.86);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(8px);
+    }
+    h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: 0.2px; }
+    .subtitle { margin: 0 0 18px; color: var(--muted); line-height: 1.45; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+    a.btn {
+      display: block;
+      padding: 14px 14px;
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: transform .08s ease, border-color .12s ease, background .12s ease;
+    }
+    a.btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(242,201,125,0.45);
+      background: rgba(242,201,125,0.06);
+    }
+    .label { display: block; font-weight: 600; margin-bottom: 4px; }
+    .hint { display: block; color: var(--muted); font-size: 13px; line-height: 1.4; }
+    .footer {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    code {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Quran Time</h1>
+      <p class="subtitle">
+        Support page for the Quran Time mobile app (iOS & Android).
+        Use the links below for privacy, terms, and contact.
+      </p>
+
+      <div class="grid">
+        <a class="btn" href="./privacy.html">
+          <span class="label">Privacy Policy</span>
+          <span class="hint">How data is handled (analytics, purchases, ads).</span>
+        </a>
+
+        <a class="btn" href="./terms.html">
+          <span class="label">Terms of Use</span>
+          <span class="hint">Subscription terms and acceptable use.</span>
+        </a>
+
+        <a class="btn" href="mailto:support@ecotection.life">
+          <span class="label">Contact Support</span>
+          <span class="hint">Email us for help or feedback.</span>
+        </a>
+
+        <a class="btn" href="./app-ads.txt">
+          <span class="label">app-ads.txt</span>
+          <span class="hint">AdMob verification file (public).</span>
+        </a>
+      </div>
+
+      <div class="footer">
+        <div>Tip: AdMob checks <code>/app-ads.txt</code> at this site’s root.</div>
+        <div>If you’re using GitHub Pages, keep <code>app-ads.txt</code> in the repository root.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
